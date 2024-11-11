@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.enlarged {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  width: 80%;
+  height: auto;
+  max-width: 90vw; /* Ensure the image does not exceed 90% of the viewport width */
+  max-height: 90vh; /* Ensure the image does not exceed 90% of the viewport height */
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
